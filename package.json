@@ -1,10 +1,10 @@
 {
   "name": "lien-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "LIVEINEVERYNOW website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo hi"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,6 @@
   "bugs": {
     "url": "https://github.com/liveineverynow/website/issues"
   },
-  "homepage": "https://github.com/liveineverynow/website#readme",
-  "dependencies": {
-    "vercel": "^19.0.1"
-  }
+  "homepage": "https://liveineverynow.com",
+  "dependencies": {}
 }
