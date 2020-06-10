@@ -10,11 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/liveineverynow/website.git"
   },
-  "author": "",
+  "author": "Will Hanlen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/liveineverynow/website/issues"
   },
   "homepage": "https://liveineverynow.com",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^19.0.1"
+  }
 }
