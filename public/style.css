@@ -1,0 +1,95 @@
+html {
+  font-size: 21px;
+
+  --xs: 0.60rem;
+  --s: 0.80rem;
+  --m: 1rem;
+  --l: 1.25rem;
+  --xl: 1.5rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: var(--m);
+}
+
+article {
+  display: block;
+  width: 90%;
+  max-width: 680px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#logo {
+  width: 390px;
+  transform: scaleX(-1);
+  top: 8.5px;
+  position: relative;
+  margin-right: 5px;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: var(--m);
+  margin: -0.2em;
+}
+
+nav a {
+  padding: 0.6em;
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--m);
+
+  border: 0.1em solid #000000;
+
+  margin: 0.3em;
+
+  transition: transform 300ms;
+}
+
+nav a:hover {
+  transform: scale(1.05);
+
+}
+
+.text-l {
+  font-size: var(--l);
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1, h2, h3, p {
+  margin: 1em 0 2rem 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: var(--xl);
+  letter-spacing: -0.01em;
+  -webkit-text-stroke: 0.04em black;
+  display: flex;
+  width: 0;
+  flex-flow: column nowrap;
+}
+
+h2 {
+  font-size: var(--l);
+}
+
+h3 {
+  font-size: var(--m);
+}
