@@ -1,5 +1,4 @@
 html {
-  font-size: 21px;
 
   --xs: 0.60rem;
   --s: 0.80rem;
@@ -21,14 +20,13 @@ article {
   max-width: 680px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 30vh;
 }
 
 #logo {
-  width: 390px;
-  transform: scaleX(-1);
-  top: 8.5px;
-  position: relative;
-  margin-right: 5px;
+  display: block;
+  margin: auto;
+  width: 190px;
 }
 
 nav {
@@ -48,6 +46,9 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: var(--m);
+  text-align: center;
+  /*max-width: 40%;
+  min-width: 25%;*/
 
   border: 0.1em solid #000000;
 
@@ -78,12 +79,17 @@ p {
 }
 
 h1 {
+  text-transform: uppercase;
   font-size: var(--xl);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.05em;
   -webkit-text-stroke: 0.04em black;
   display: flex;
   width: 0;
   flex-flow: column nowrap;
+}
+
+ul, ol {
+  margin-top: 2rem;
 }
 
 h2 {
@@ -92,4 +98,29 @@ h2 {
 
 h3 {
   font-size: var(--m);
+}
+
+/* Mobile (Default) */
+html { 
+  font-size: 21px;
+}
+
+
+/* Tablet modifications*/
+@media (min-width: 460px) {
+
+html {
+  font-size: 23px;
+}
+
+}
+
+
+/* Desktop modifications*/
+@media (min-width: 705px) {
+
+html {
+  font-size: 25px;
+}
+
 }
