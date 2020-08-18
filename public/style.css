@@ -107,7 +107,6 @@ html {
 */
 
 body, h1, h2, h3, p, span {
-  background: var(--b1);
   font-family: var(--body);
   font-size: var(--M);
   font-weight: var(--light);

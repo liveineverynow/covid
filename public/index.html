@@ -4,26 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <base href="./">
   <link rel="icon" href="assets/favicon.png" type="image/ico" sizes="16x16">
 
   <title>LIVEINEVERYNOW.</title>
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="home.css">
 
 </head>
 <body>
-  <img id="logo" src="assets/logo.png" alt="LIVEINEVERYNOW logo">
 
-  <p class="intro">Thanks for coming! We’re currently working on our next project. In the meantime feel free to check out these resources.</p>
 
-  <nav class="centered">
-    <a href="mission">OUR MISSION</a>
-    <a href="read">READ</a>
-    <a href="podcast">PODCAST</a>
-    <a href="https://open.spotify.com/playlist/5rib6Vve1cB7M6IQB0qyxx?si=SEfcGG84RZqpPGZznEA2dQ">PLAYLIST</a>
+  <input type='checkbox' id='toggle'></input>
+
+  <header>
+    <label for="toggle" class="menu-toggle" id="menu-open"></label>
+    <a href="/"><img id="logo" src="assets/logo.png" alt="LIVEINEVERYNOW. logo" /></a>
+  </header>
+
+  <nav>
+    <label for="toggle" class="menu-toggle" id="menu-close-desktop"></label>
+    <label for="toggle" class="menu-toggle" id="menu-close-mobile"></label>
+
+    <a href="blog">Blog</a>
+    <a href="podcast">Podcast</a>
+    <a href="newsletter">Newsletter</a>
+    <a href="video">Video</a>
+    <a href="radio">Radio</a>
+
+
+    <h2>Social</h2>
+    <div>
+      <a href="#"><img alt="" src="assets/instagram.svg"/></a>
+      <a href="#"><img alt="" src="assets/twitter.svg"/></a>
+      <a href="#"><img alt="" src="assets/medium.svg"/></a>
+      <a href="#"><img alt="" src="assets/linkedin.svg"/></a>
+      <a href="#"><img alt="" src="assets/youtube.svg"/></a>
+    </div>
   </nav>
+
+  <main class="gallery">
+    <div class="card big"><div>
+    </div></div>
+
+    <div class="card big"><div>
+    </div></div>
+
+    <div class="card"><div>
+    </div></div>
+
+    <div class="card"><div>
+    </div></div>
+
+    <div class="card"><div>
+    </div></div>
+
+    <div class="card big"><div>
+    </div></div>
+  </main>
+
 </body>
 </html>
 
