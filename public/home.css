@@ -1,4 +1,10 @@
-header #logo {
+/*
+*
+Header & Nav
+*
+*/
+
+header #logo { /* LOGO */
   width: 33rem;
   margin-right: 15px;
   margin-left: 15px;
@@ -6,12 +12,7 @@ header #logo {
   display: block;
 }
 
-header label {
-  display: block;
-  grid-area: open;
-}
-
-.menu-toggle {
+.menu-toggle { /* All toggle buttons */
   display: block;
   width: 30px;
   height: 30px;
@@ -34,7 +35,6 @@ header label {
   position: absolute;
   top: 0;
   right: 0;
-  cursor: pointer;
 }
 
 #menu-close-mobile {
@@ -43,7 +43,6 @@ header label {
   position: absolute;
   top: 0px;
   left: 0px;
-  cursor: pointer;
 }
 
 header {
@@ -59,7 +58,7 @@ header {
   display: grid;
   grid-template-columns: 50px auto 50px;
   grid-template-rows: 60px;
-  grid-template-areas: "open logo";
+  grid-template-areas: "open logo .";
 
 
   align-items: center;
@@ -85,7 +84,8 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: var(--L);
+  font-size: var(--XL);
+  margin: 3px 0;
   color: var(--f1);
 }
 
@@ -93,36 +93,40 @@ nav a:hover {
   color: var(--ac);
 }
 
-nav h2 {
-  font-size: var(--M);
-  margin-top: 40px;
-  color: var(--f2);
-}
-
-nav div {
+nav .nav-social {
   display: flex;
+  width: 100%;
+  max-width: 360px;
+  padding: 25px 0;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  box-sizing: border-box;
+  justify-content: space-around;
   align-items: center;
+  bottom: 0;
+  left: 0;
 }
 
-nav a img {
-  display: block;
-  width: 25px;
-  margin: 5px;
-}
+
+/*
+*
+Main & Gallerey
+*
+*/
 
 main {
+  margin-bottom: 200px;
   width: 100%;
   margin-left: auto;
+  transition: width 300ms;
+}
+
+.gallery {
+  margin-top: -5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  justify-content: flex-start;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  transition: width 300ms;
-  box-sizing: border-box;
-  padding: 0 10px;
-  margin-top: -5px;
-  font-size: 0;
 }
 
 .card {
@@ -132,18 +136,25 @@ main {
 
   width: calc((100% - 30px) / 3);
   min-width: 300px;
-  max-width: 50%;
+  max-width: max(50%, 900px);
   flex-grow: 1;
 }
 
-.card div {
+.card div, .card a {
+  display: block;
+  width: 100%;
   height: 0;
   padding-top: 56.25%;
   background-color: #b4b4b4;
 }
 
-.bigger {
+.jumbo {
   width: calc(100% - 10px);
+  max-width: 100%;
+}
+
+.jumbo div, .jumbo a {
+  padding-top: 40vh;
 }
 
 .big {
@@ -190,5 +201,9 @@ main {
 
   #toggle:checked ~ header {
     width: calc(100% - 240px);
+  }
+
+  nav a {
+    font-size: var(--L);
   }
 }
